@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import queryString from "query-string";
 import io from "socket.io-client";
+import Header from './Header'
+import Input from './Message'
 let socket;
 let endpoint = "localhost:3000";
 
@@ -41,16 +43,9 @@ const Chat = ({ location }) => {
 
   return (
     <div>
-      <div>
-        <input
-          className="outline-none flex-grow m-2 py-2 px-4 mr-1 rounded-full border border-gray-300 bg-gray-200 resize-none"
-          value={message}
-          onChange={(event) => setMessage(event.target.value)}
-          onKeyPress={(event) =>
-            event.key === "Enter" ? sendMessage(event) : null
-          }
-        />
-      </div>
+      <Header room={room}/>
+      <Input message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+         
     </div>
 
     // <div>
