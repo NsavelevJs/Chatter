@@ -5,9 +5,9 @@ const Join = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
   return (
-    <div className="w-full max-w-xs mx-auto w-1/3 p-8">
+    <div className="w-full max-w-xs mx-auto flex justify-center  w-1/3 p-8">
       
-      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 ">
+      <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 
         <div className="font-sans text-lg text-center ">
        <h1 className="">Join</h1>
@@ -47,7 +47,7 @@ const Join = () => {
           to={`/chat?name=${name}&room=${room}`}
         >
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-auto"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
             typeof="submit"
           >
             Sign In

@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Header = ({room}) => (
        
             <div>
-                <div class="top-0 overscroll-none fixed w-full bg-blue-400 h-16 pt-2 text-white flex justify-between shadow-md">
+                <div class="fixed top-0 overscroll-none fixed w-full bg-blue-400 h-16 pt-2 text-white flex justify-between shadow-md">
           <a href="/">
             <svg
               xmlns="http://www.w3.org/2000/svg"

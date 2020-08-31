@@ -8,19 +8,25 @@ const Message = ({ message: { user, text }, name }) => {
     isSentByCurrentUser = true;
   }
   return isSentByCurrentUser ? (
+  
     <div id="message container " className='flex justify-end rounded-l-lg '>
-      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg'>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>{trimName}</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
         <p id="message text" className='text-blue-100 tracking-normal'>{text}</p>
       </div>
-      <p id="sent text" className='pr-10'>{trimName} </p>
     </div>
+    
   ) : (
-    <div id="message container " className='justify-start rounded-r-lg'>
-    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
       <p id="message text" className='text-blue-900 tracking-normal'>{text}</p>
     </div>
-    <p id="sent text" className='pl-10'>{user}</p>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>{user}</p>
     </div>
+
+
+
+    
   );
 };
 

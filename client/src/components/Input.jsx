@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
 const Input = ({message, setMessage,sendMessage}) => {
     return(
         
   <form className='fixed w-full flex justify-between bg-blue-200 bottom-0'>
     <input
-      className=" w-5 outline-none flex-grow m-2 p-2 px-4 mr-1 rounded-full border border-gray-300 bg-gray-200 resize-none"
+      className=" w-5 outline-none flex-grow m-2 p-2 px-4 mr-1 rounded-full border focus:bg-white resize-none"
       type="text"
       placeholder="Type a message..."
       value={message}
@@ -14,9 +14,9 @@ const Input = ({message, setMessage,sendMessage}) => {
         event.key === "Enter" ? sendMessage(event) : null
       }
     />
-    <button className="m-2 outline-none animate-bounce" onClick={(event)=> sendMessage(event)} >
+    <button className="m-2 outline-none  border-none " onClick={(event)=> sendMessage(event)} >
            <svg
-            class="svg-inline--fa text-blue-400 fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2"
+            class="svg-inline--fa text-blue-400 fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2 outline-none"
             aria-hidden="true"
            focusable="false"
             data-prefix="fas"
