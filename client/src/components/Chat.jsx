@@ -44,8 +44,294 @@ const Chat = ({ location }) => {
 
   return (
     <div>
-      <Header room={room} />
+      <Header room={room} className='bg-fixed' />
       <Messages messages={messages} name={name} />
+{/* This is being used for testing for Styling*/}
+
+
+         
+
+      {/* <div id="message container " className=' flex overflow-auto flex-auto justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className=' bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+
+    <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+      <div id="message container " className='flex justify-end rounded-l-lg '>
+      <p id="sent text" className='flex items-center tracking-normal pr-10'>name</p>
+      <div id="message box" className='bg-blue-900 w-3/4 mx-4 my-2 p-2 rounded-lg clearfix'>
+        <p id="message text" className='text-blue-100 tracking-normal'>text</p>
+      </div>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div>
+    <div id="message container " className='flex justify-start rounded-r-lg'>
+    <div id="message box" className='bg-blue-100 w-3/4 mx-4 my-2 p-2 rounded-lg flex items-center'>
+      <p id="message text" className='text-blue-900 tracking-normal'>text</p>
+    </div>
+    <p id="sent text" className='pl-10 flex items-center tracking-normal'>user</p>
+    </div> */}
+
+
+
+    
       <Input
         message={message}
         setMessage={setMessage}

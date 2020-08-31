@@ -5,7 +5,7 @@ const Join = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
   return (
-    <div className="w-full max-w-xs mx-auto flex justify-center  w-1/3 p-8">
+    <div className="w-full max-w-xs mx-auto flex justify-center p-8">
       
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
 
