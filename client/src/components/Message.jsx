@@ -1,6 +1,10 @@
 import React from "react";
 import ReactEmoji from 'react-emoji'
+
+
+
 const Message = ({ message: { user, text }, name }) => {
+  
   let currentUser = false;
   const trimName = name.trim().toLowerCase();
 
@@ -9,7 +13,7 @@ const Message = ({ message: { user, text }, name }) => {
   }
   return currentUser ? (
   
-    <div id="message container " className='flex justify-end rounded-l-lg '>
+    <div id="message container" className='flex justify-end rounded-l-lg '>
       <p id="sent text" className='flex items-center tracking-normal pr-10'>{trimName}</p>
       <div id="message box" className='bg-blue-900 w-auto mx-4 my-2 p-2 rounded-lg clearfix'>
         <p id="message text" className='text-blue-100 tracking-normal'>{ReactEmoji.emojify(text)}</p>

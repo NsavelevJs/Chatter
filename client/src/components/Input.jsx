@@ -16,7 +16,7 @@ const Input = ({message, setMessage,sendMessage}) => {
     />
     <button className="m-2 outline-none  border-none " onClick={(event)=> sendMessage(event)} >
            <svg
-            class="svg-inline--fa text-blue-400 fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2 outline-none"
+            className="svg-inline--fa text-blue-400 fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2 outline-none"
             aria-hidden="true"
            focusable="false"
             data-prefix="fas"
