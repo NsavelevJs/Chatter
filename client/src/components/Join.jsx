@@ -5,10 +5,10 @@ const Join = () => {
   const [name, setName] = useState("");
   const [room, setRoom] = useState("");
   return (
-    <div className="w-full max-w-xs mx-auto flex justify-center p-8">
-      
+    
+    <div className="w-full max-w-xs mx-auto justify-center">
+      <h1 className='align flex justify-center text-2xl'>Welcome to Pick-up</h1>
       <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-
         <div className="font-sans text-lg text-center ">
        <h1 className="">Join</h1>
       </div>
@@ -47,14 +47,17 @@ const Join = () => {
           to={`/chat?name=${name}&room=${room}`}
         >
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex justify-center"
             typeof="submit"
           >
             Sign In
           </button>
         </Link>
       </form>
+      <h1 className='align flex justify-center text-xl'>Pick-up where you left off!</h1>
+
     </div>
+    
   );
 };
 export default Join;
